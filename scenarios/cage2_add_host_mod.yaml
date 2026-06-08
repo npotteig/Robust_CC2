@@ -1,0 +1,72 @@
+Agents:
+  Blue:
+    INT:
+      Hosts:
+        Enterprise3:
+          Interfaces: All
+          System info: All
+          User info: All
+        User5:
+          Interfaces: All
+          System info: All
+          User info: All
+    starting_sessions:
+      - hostname: Enterprise3
+        name: VeloEnterprise3
+        parent: VeloServer
+        type: VelociraptorClient
+        username: SYSTEM
+      - hostname: User5
+        name: VeloUser5
+        parent: VeloServer
+        type: VelociraptorClient
+        username: ubuntu
+  Green:
+    INT:
+      Hosts:
+        Enterprise3:
+          Interfaces: All
+          System info: All
+          User info: All
+        User5:
+          Interfaces: All
+          System info: All
+          User info: All
+    starting_sessions:
+    - hostname: User5
+      name: GreenSession
+      type: green_session
+      username: GreenAgent
+Hosts:
+  Enterprise3:
+    AWS_Info: []
+    image: Internal
+    info:
+      Enterprise3:
+        Interfaces: All
+    ConfidentialityValue: Medium
+    AvailabilityValue: Medium
+  User5:
+    AWS_Info: []
+    image: linux_user_host1
+    info:
+      User5:
+        Interfaces: All
+    AvailabilityValue: None
+Subnets:
+  Enterprise:
+    Hosts:
+    - Enterprise3
+    NACLs:
+      all:
+        in: all
+        out: all
+    Size: 1
+  User:
+    Hosts:
+    - User5
+    NACLs:
+      all:
+        in: all
+        out: all
+    Size: 1

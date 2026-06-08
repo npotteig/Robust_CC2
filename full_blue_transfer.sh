@@ -1,0 +1,4 @@
+python blue_ppo_train.py blue_gcn_B_rbt_stealth_flood_2 -s scenarios/cage2.yaml --num_nodes 13 --globalnode --epochs 500 --use_blue_checkpoint --red_checkpoint checkpoints/red/red_gcn_B_rbt_stealth_flood_2.pt --red_add_stealth_action --red_add_flood_actions
+python blue_ppo_train.py blue_gcn_B_rbt_flood_0 -s scenarios/cage2.yaml --num_nodes 13 --globalnode --epochs 500 --use_blue_checkpoint --red_checkpoint checkpoints/red/red_gcn_B_rbt_flood_0.pt --red_add_flood_actions
+python blue_ppo_train.py blue_gcn_B_rbt_stealth_2 -s scenarios/cage2.yaml --num_nodes 13 --globalnode --epochs 500 --use_blue_checkpoint --red_checkpoint checkpoints/red/red_gcn_B_rbt_stealth_2.pt --red_add_stealth_action
+python blue_ppo_train.py blue_gcn_A_rbt_1 -s scenarios/cage2.yaml --num_nodes 13 --globalnode --epochs 500 --use_blue_checkpoint --red_checkpoint checkpoints/red/red_gcn_A_rbt_1.pt

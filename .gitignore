@@ -1,0 +1,10 @@
+checkpoints/
+logs/
+data/
+*.cypython
+*/__pycache__/
+wrapper/__pycache__/
+*.pyc
+*.txt
+*.egg-info
+*.csv
