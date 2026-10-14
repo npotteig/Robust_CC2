@@ -1,4 +1,4 @@
-# Adaptive Cyber-Defense for Emergent Attacker Actions using Reinforcement Learning with Behavior Trees
+# Adaptive Cyber-Defense for Evolving Attacker Capabilities using Reinforcement Learning and Behavior Trees
 
 ## Setup
 ```bash
